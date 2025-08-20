@@ -1,0 +1,44 @@
+/* تست کامنت در فایل */
+header{
+    background-color: yellow ;
+}
+
+/*  استفده از کلاس  و کلاس ترکیبی*/
+.text{ background: blueviolet;}
+.font-color{color: blue;
+text-align: center;}
+
+/*استفاده از ایدی */
+#unique-color{ color: midnightblue;
+text-align: center;}
+
+
+/* انتخاب کننده وابسته*/
+div.text{font-weight: bold;}
+
+/* انتخاب کننده چند سطحی*/
+header div .text{ font-weight: bolder;}
+
+/* "attribute" انتخاب کننده */
+a[href] {
+    color:pink
+}
+
+a[href*="example"] {
+    color: red;
+}
+
+/* شبه کلاس*/
+li:hover{
+    background: midnightblue;
+}
+
+/* شبه المنت*/
+/* شبه المنت وضعیت رو نشون نمیده بلکه میاد  مکان رو نشون میده*/
+li::before{
+    content: "LIST ITEM:";
+}
+
+p#last-pargraph::first-line{
+    font-weight: bold;
+}
