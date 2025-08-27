@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* تست کامنت در فایل */
 header{
     background-color: yellow ;
@@ -42,3 +91,80 @@ li::before{
 p#last-pargraph::first-line{
     font-weight: bold;
 }
+
+/*"border"استفاذه از */
+ h2#border-teting {
+   /* border-width: 10px;
+    border-style: double;
+    border-color: crimson;*/
+    border: 10px  double crimson;
+    
+}
+
+/*  "padding" استفاده از */
+h2 + div.text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+}
+
+/* "marging"استفاده از */
+div.text {
+    margin-bottom: 15px;
+}
+
+/*استفاده از طول و عرض*/
+header#texting-width {
+    width: 120px;
+    height: 40;
+}
+
+/*   و "radial gridient" و ارث بری"liner gridiant" استفاده از */
+html{
+    margin: 40px;
+    background-color: blueviolet;
+    /*background: linear-gradient(purple ,  black);*/
+    background: radial-gradient(black,purple);
+
+}
+
+/*استفاده از تصویر در بک گراند مربوط به بخش اول دوم وسوم ویدیو*/
+#background{
+    background-image:url(./photo_2025-08-05_20-31-34.jpg);
+    background-size: 250px 200px;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-position:-100px 0;  /* بر اساس محور ایکس و ایگرگ هستش و منفی به معنای تغییر دادن از بالا بعه پایینه*/
+   border: 5px dashed green;
+   height: 50px;
+   background-origin: border-box;
+   background-clip:content-box;
+   background-attachment:fixed;
+   box-sizing:content-box;
+   
+}
+
+
+
+/*خلاصه نویسی بک گراند*/
+/*#background{
+     background: url(./photo_2025-08-05_20-31-34.jpg) 0 40% /  cover no-repeat border-box content-box fixed ;
+}*/
+
+/* نمایش بک گرند چند لایه ایی*/
+.layer {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(236deg,rgba(169, 25, 235, 0.6), rgba(234, 81, 211, 0.7) 80%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGdX0N3vVCTRa_KRfJLLMeibEaXENxACd7Cw&s) 0 15% / cover no-repeat;
+    
+    
+}
+
+/*استفاده از فیلتر*/
+.layer:hover {
+    filter: brightness(200%)
+
+}
+
+    
