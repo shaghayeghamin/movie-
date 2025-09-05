@@ -1,0 +1,63 @@
+/* استفاده از فونت فمیلی*/
+#font-tester{
+    font-family:serif;
+}
+
+/* "cdn"استفاده از */
+header{
+    font-family: "yekan";
+}
+
+/*و استایل دادن به فونت"font face"استفاده از */
+@font-face{
+    font-family: "vazirmatn";
+    src: url(./fonts/Vazirmatn-Bold.ttf) format("truetype");
+    src: url(fonts/Vazirmatn-Bold.woff2) format("woff2");
+  
+}
+h2 + p {
+    color: blue;
+    font-family: "vazirmatn";
+    border-color: black;
+    border-style: dashed;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;   
+}
+
+/* کوتاه شده فونت ها و استفاده از پراپرتی های مربوط ه متن*/
+.pargraph{
+    border-style: none;
+    color: black;
+    font:bold italic 20px/1.8 "vazirmatn";
+    text-shadow: 0px 3px 3px red;
+    white-space: pre-wrap;
+}
+/* استفاده از em */
+.parent{
+    font-size: 20px;
+    border: solid black;
+
+}
+
+.child{
+    font-size: 1.5em;                    /*<---- در این قسمت مقدار 1.5 در مقدار 20 پیکسل المنت والد ضرب میشه*/
+}
+
+/* داره "html"که بستگی به فونت سایز 'rem"استفاده از */
+
+html{
+    font-size: 100%;
+}
+
+.child2{
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.model{
+    width: 40vw;
+    height: 50vh;
+    background-color: gray;
+}
+
