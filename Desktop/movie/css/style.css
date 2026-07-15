@@ -7,8 +7,6 @@ body{
     border-color: #192329;
     border-style: solid;
     border-radius: 13px;
-    height: 800px;
-    margin: 50px;
 }
 
 .nav-container{
@@ -50,7 +48,8 @@ body{
      border-style: solid;
      width : 120px;
      height: 40px;
-     margin-top: 5px;
+     margin-top: 8px;
+     margin-right: 2px;
      font-family: "Arimo", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -67,14 +66,14 @@ body{
     border-radius: 12px;
     border-style: solid;
     width: 45px;
-    margin: 8px;
+    margin: 10px;
 
 }
 
 .ring img{
       width: 18px;
       height: 18px;
-      margin-top: 9px;
+      margin-top: 10px;
 }
 
 .text-container{
@@ -256,6 +255,7 @@ font-family: "Arimo", sans-serif;
 }
 
 .play i {
+
     font-size:10px;
     color:#FEFEFE;
     opacity: 100%;
@@ -293,7 +293,7 @@ font-family: "Arimo", sans-serif;
 
 .slider{
     position: relative;
-    width: 900px;
+    width: 100%;
     height: 400px;
 }
 
@@ -332,6 +332,72 @@ font-family: "Arimo", sans-serif;
     border:1px solid rgba(255,255,255,.15);
 }
 
+.movie-bottom{
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:15px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+}
+.movie-left{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.movie-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-family:"Arimo",sans-serif;
+    font-weight: 100;
+}
+
+.movie-left h2{
+    color:white;
+    font-size:30px;
+    margin:0;
+}
+
+.movie-left i{
+font-size:10px;
+ color:#FEFEFE;
+ opacity: 100%;
+}
+
+.favorite-btn{
+    width:28px;
+    height:28px;
+    background: transparent;
+    color:rgba(255,255,255,.5);
+     border:2px solid rgba(255,255,255,.5);
+    border-color:#908F92;
+    box-shadow: none;
+    outline: none;
+    filter: none;
+    appearance:none;
+    -webkit-appearance:none;
+    padding-top: 2px;
+    padding-bottom: 0.5px;
+    padding-right: 0.5;
+    border-radius:60%;
+    cursor:pointer;
+    margin: 0;
+}
+
+.favorite-btn:hover,
+.favorite-btn:focus,
+.favorite-btn:active{
+    background:transparent;
+    box-shadow:none;
+    outline:none;
+
+}
+
 .slides img{
 
     width:100%;
@@ -344,7 +410,7 @@ font-family: "Arimo", sans-serif;
 
 .slide-active{
 
-    width:720px;
+    width:85%;
     height:420px;
     left:0;
     top:0;
@@ -354,7 +420,7 @@ font-family: "Arimo", sans-serif;
 
 .second{
 
-    width:220px;
+    width:35%;
     height:390px;
     left:560px;
     top:20px;
@@ -365,7 +431,7 @@ font-family: "Arimo", sans-serif;
 
 .third{
 
-    width:190px;
+    width:30%;
     height:360px;
     left:640px;
     top:35px;
@@ -377,7 +443,7 @@ font-family: "Arimo", sans-serif;
 
 .fourth{
 
-    width:160px;
+    width:25%;
     height:330px;
     left:710px;
     top:50px;
@@ -388,7 +454,7 @@ font-family: "Arimo", sans-serif;
 
 .fifth{
 
-    width:130px;
+    width:22%;
     height:300px;
     left:770px;
     top:65px;
